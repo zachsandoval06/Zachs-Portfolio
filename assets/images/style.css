@@ -1,0 +1,131 @@
+/*  */
+header{
+    height: 100px;
+    background: rgb(246, 243, 243);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox-item {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #a71f1f;
+    background-color: #e61313;
+}
+
+.flexbox-item-1 {
+    flex: 1 0 0;
+    min-height: 200px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    order: 3;
+}
+
+.flexbox-item-2 {
+    min-height: 100px;
+    flex-grow: 2;
+    flex-basis: 0;
+    align-self: center;
+    order: 1;
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+    flex-grow: 1;
+    flex-basis: 0;
+    order: 2;
+}
+
+
+
+
+/*  */
+html {
+    height: 100%;
+    background-color: #958888;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flexbox-item-1 {
+    min-height: 350px;
+}
+
+.flexbox-item-2 {
+    min-height: 350px;
+}
+
+.flexbox-item-3 {
+    min-height: 350px;
+}
+
+.flexbox-container {
+    position: relative;
+    background-color: rgb(37, 35, 163);
+}
+
+.flexbox-container::before {
+    content: 'Work';
+    position: absolute;
+    top: -40px;
+    color: rgb(44, 87, 181);
+    font-size: 2em;
+}
+
+.axis {
+    position: absolute;
+}
+
+.flexbox-item {
+    position: relative;
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox-item::before {
+    content: 'Project';
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    top: 10px;
+    left: 15px;
+}
+
+.flexbox-item::after {
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    top: 10px;
+    right: 15px;
+}
+
+.flexbox-item-1::after {
+    content: 'Coming Soon';
+}
+
+.flexbox-item-2::after {
+    content: 'Coming Soon';
+}
+
+.flexbox-item-3::after {
+    content: 'Coming Soon';
+}
+
+
+footer{
+    height: 50px;
+    background-color: ;
+
+}
